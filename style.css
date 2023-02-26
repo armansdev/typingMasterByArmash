@@ -19,7 +19,6 @@
    }
   
    .stats{
-      /* background-color: aqua; */
       text-align: right;
       font-size: 18px;
    }
@@ -29,7 +28,6 @@
    }
   
    #quote{
-      /* background-color: rgb(203, 215, 32); */
       text-align: justify;
       margin: 20px 0px;
    }
@@ -43,18 +41,29 @@
    }
   
    button{
-      float: right;
-      margin-top: 20px;
       padding: 10px 30px;
       font-size: 18px;
-      background-color: red;
-      border: none;
       border-radius: 10px;
-      color: white;
+      background-color: whitesmoke;
+      color: #1f1f1f;
+      border: 2px solid #555555;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      float: right;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
    }
   
+  button:hover {
+      background-color: #1f1f1f;
+      color: white;
+  }
+  
    .result{
-      /* background-color: aqua; */
       margin-top: 80px;
       display: none;
    }
@@ -64,7 +73,6 @@
       margin-bottom: 20px;
    }
    .wrapper{
-      /* background-color: yellow; */
       display: flex;
       justify-content: space-around;
    }
