@@ -1,0 +1,81 @@
+ *{
+    padding: 0;
+    margin: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+   body{
+      background-color: #1f1f1f;
+   }
+   .container{
+      background-color: whitesmoke;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 80vh;
+      height: 80vh;
+      border-radius: 10px;
+      padding: 50px 30px;
+   }
+  
+   .stats{
+      /* background-color: aqua; */
+      text-align: right;
+      font-size: 18px;
+   }
+  
+   .stats span{
+      font-weight: 600;
+   }
+  
+   #quote{
+      /* background-color: rgb(203, 215, 32); */
+      text-align: justify;
+      margin: 20px 0px;
+   }
+  
+   textarea{
+      resize: none;
+      padding: 10px 5px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+   }
+  
+   button{
+      float: right;
+      margin-top: 20px;
+      padding: 10px 30px;
+      font-size: 18px;
+      background-color: red;
+      border: none;
+      border-radius: 10px;
+      color: white;
+   }
+  
+   .result{
+      /* background-color: aqua; */
+      margin-top: 80px;
+      display: none;
+   }
+   .result p{
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 20px;
+   }
+   .wrapper{
+      /* background-color: yellow; */
+      display: flex;
+      justify-content: space-around;
+   }
+   .wrapper span{
+      font-weight: 600;
+   }
+  
+   .success{
+     color: green;
+   }
+  
+   .fail{
+     color: red;
+   }

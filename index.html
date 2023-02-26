@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Typing Speed Master</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="stats">
+        <p>Time: <span id="timerID">0</span></p>
+        <p>Mistakes:<span id="mistakesID">0</span></p>
+      </div>
+      <div id="quote" style="
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -o-user-select: none;
+    "
+    unselectable="on"
+    onselectstart="return false;"
+    onmousedown="return false;">
+             <!-- <p>i am  quote</p> -->
+      </div>
+      <textarea id="quote-input" rows="3" placeholder="Type Here"></textarea>
+
+      <button id="start-test" onclick="startTest()">Start Test</button>
+      <button id="stop-test" onclick="displayResult()">Stop Test</button>
+
+      <div class="result">
+        <p>Result</p>
+        <div class="wrapper">
+          <p>Accuracy: <span id="accuracyID">99%</span></p>
+          <p>Speed: <span id="speedID">0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
