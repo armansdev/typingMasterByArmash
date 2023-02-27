@@ -1,89 +1,96 @@
- *{
-    padding: 0;
-    margin: 0; 
-    font-family: Arial, Helvetica, sans-serif;
+*{
+   padding: 0;
+   margin: 0; 
+   font-family: Arial, Helvetica, sans-serif;
+}
+body{
+   background-color: #1f1f1f;
+}
+.container{
+   background-color: whitesmoke;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 80vh;
+   height: 80vh;
+   border-radius: 10px;
+   padding: 50px 30px;
+}
+  
+.stats{
+   text-align: right;
+   font-size: 18px;
+}
+  
+.stats span{
+   font-weight: 600;
+}
+  
+#quote{
+   text-align: justify;
+   margin: 20px 0px;
+}
+  
+textarea{
+   resize: none;
+   padding: 10px 5px;
+   width: 100%;
+   border-radius: 5px;
+   font-size: 16px;
+}
+  
+button{
+   padding: 10px 30px;
+   font-size: 18px;
+   border-radius: 10px;
+   background-color: whitesmoke;
+   color: #1f1f1f;
+   border: 2px solid #555555;
+   padding: 16px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   float: right;
+   font-size: 16px;
+   margin: 4px 2px;
+   transition-duration: 0.4s;
+   cursor: pointer;
+}
+  
+button:hover {
+   background-color: #1f1f1f;
+   color: white;
+}
+  
+.result{
+   margin-top: 80px;
+   display: none;
+}
+.result p{
+   text-align: center;
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+.wrapper{
+   display: flex;
+   justify-content: space-around;
+}
+.wrapper span{
+   font-weight: 600;
+}
+  
+.success{
+  color: green;
   }
-   body{
-      background-color: #1f1f1f;
-   }
+  
+.fail{
+   color: red;
+}
+
+@media screen and (max-width: 600px){
    .container{
-      background-color: whitesmoke;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      width: 80vh;
-      height: 80vh;
-      border-radius: 10px;
-      padding: 50px 30px;
+      width: 50%;
+      height: 50%;
    }
-  
-   .stats{
-      text-align: right;
-      font-size: 18px;
-   }
-  
-   .stats span{
-      font-weight: 600;
-   }
-  
-   #quote{
-      text-align: justify;
-      margin: 20px 0px;
-   }
-  
-   textarea{
-      resize: none;
-      padding: 10px 5px;
-      width: 100%;
-      border-radius: 5px;
-      font-size: 16px;
-   }
-  
-   button{
-      padding: 10px 30px;
-      font-size: 18px;
-      border-radius: 10px;
-      background-color: whitesmoke;
-      color: #1f1f1f;
-      border: 2px solid #555555;
-      padding: 16px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      float: right;
-      font-size: 16px;
-      margin: 4px 2px;
-      transition-duration: 0.4s;
-      cursor: pointer;
-   }
-  
-  button:hover {
-      background-color: #1f1f1f;
-      color: white;
-  }
-  
-   .result{
-      margin-top: 80px;
-      display: none;
-   }
-   .result p{
-      text-align: center;
-      font-size: 20px;
-      margin-bottom: 20px;
-   }
-   .wrapper{
-      display: flex;
-      justify-content: space-around;
-   }
-   .wrapper span{
-      font-weight: 600;
-   }
-  
-   .success{
-     color: green;
-   }
-  
-   .fail{
-     color: red;
-   }
+}
