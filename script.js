@@ -1,4 +1,4 @@
-const quoteApiUrl = "https://api.quotable.io/random?minLength=120&maxLength=200";
+const quoteApiUrl = "https://api.quotable.io/random?minLength=120&maxLength=180";
 const quoteSection = document.getElementById("quote");
 const userInput = document.getElementById('quote-input');
 
@@ -29,6 +29,7 @@ userInput.addEventListener("input",()=>{
 
     //Creating an Array name quoteChars from recieved span tags object
     quoteChars = Array.from(quoteChars);
+
     //User inputs of each character in Textbox
     let userInputChars = userInput.value.split("");
 
@@ -49,8 +50,12 @@ userInput.addEventListener("input",()=>{
                 char.classList.add("fail")
             }
             document.getElementById("mistakesID").innerHTML = mistakes;
-            }
+        }
     });
+
+    if(userInput.value.length >= quote.length){
+        displayResult();
+    }
 });
 
 function updateTimer(){
@@ -61,10 +66,12 @@ function updateTimer(){
         document.getElementById("timerID").innerHTML = --time + "s";
     }
 }
+
 const timeReduce = ()=>{
     time = 60;
     timer = setInterval(updateTimer,1000);
 }
+
 const displayResult = () =>{
     document.querySelector(".result").style.display = "block";
     clearInterval(timer);
@@ -79,6 +86,7 @@ const displayResult = () =>{
 
     document.getElementById('accuracyID').innerText = Math.round(((userInput.value.length - mistakes)/ userInput.value.length)*100) + "%";
 }
+
 const startTest = () =>{
     timer= "";
     mistakes = 0;
@@ -86,7 +94,9 @@ const startTest = () =>{
     timeReduce();
     document.getElementById("start-test").style.display="none";
     document.getElementById("stop-test").style.display = "block";
+    document.getElementById("quote-input").select();
 }
+
 window.onload = () =>{
     userInput.value = "";
     document.getElementById("start-test").style.display = "block";
