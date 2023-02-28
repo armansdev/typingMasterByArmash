@@ -51,18 +51,28 @@ button{
    text-align: center;
    text-decoration: none;
    display: inline-block;
-   float: right;
    font-size: 16px;
    margin: 4px 2px;
    transition-duration: 0.4s;
    cursor: pointer;
 }
-  
 button:hover {
    background-color: #1f1f1f;
    color: white;
 }
   
+#start-test, #stop-test{
+   float: right;
+}
+#restart{
+   margin: 0;
+   position: absolute;
+   top: 63%;
+   left: 50%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+}
+
 .result{
    margin-top: 80px;
    display: none;
@@ -90,7 +100,11 @@ button:hover {
 
 @media screen and (max-width: 600px){
    .container{
-      width: 50%;
-      height: 60%;
+      width: 55%;
+      height: 65%;
+   }
+   #restart{
+      top: 92%;
+      left: 50%;
    }
 }
